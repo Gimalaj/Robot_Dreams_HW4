@@ -32,7 +32,7 @@ sudo docker push gimalaj/my-unoptimize-image:0.1
 
 ```sh
 mcedit Dockerfile-1 
-sudo docker build -t my-optimized-image ./Dockerfile-1
+sudo docker build -t my-optimized-image -f ./Dockerfile-1 .
 sudo docker images
 sudo docker tag my-optimized-image gimalaj/my-optimized-image:0.2
 sudo docker push gimalaj/my-optimized-image:0.2
