@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+RUN apt update && apt upgrade -y && apt install -y nginx curl htop pwgen
+COPY index.html /var/www/html/
+CMD ["nginx", "-g", "daemon off;"]
