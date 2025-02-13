@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.18.11
 
 RUN apk add --no-cache htop pwgen nginx
 COPY index.html /var/www/html/

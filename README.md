@@ -150,7 +150,7 @@ hello-world                   latest    f1f77a0f96b7   2 weeks ago      5.2kB
 
 ``` sh
 mcedit Dockerfile-alpine
-sudo docker build -t alpine1 -f Dockerfile-alpine .
+sudo docker build -t alpine -f Dockerfile-alpine .
 ```
 
 ## Перевірка розміру створеного образу
@@ -160,11 +160,12 @@ sudo docker images
 ```
 
 **Вивід:**
-```REPOSITORY                    TAG       IMAGE ID       CREATED        SIZE
-hw5-nginx-image               latest    efcd5749868a   23 hours ago   197MB
-alpine1                       latest    84a56f3686ee   3 days ago     10.7MB
-gimalaj/my-optimized-image    0.2       b6a28a592871   3 days ago     202MB
-gimalaj/my-unoptimize-image   0.1       412325da7810   3 days ago     205MB
-hw3-docker                    latest    67dd050b1e8b   8 days ago     197MB
-hello-world                   latest    f1f77a0f96b7   3 weeks ago    5.2kB
+```
+REPOSITORY                    TAG       IMAGE ID       CREATED          SIZE
+alpine                        latest    b5e85fce5ecf   26 seconds ago   10.2MB
+hw5-nginx-image               latest    efcd5749868a   23 hours ago     197MB
+gimalaj/my-optimized-image    0.2       b6a28a592871   3 days ago       202MB
+gimalaj/my-unoptimize-image   0.1       412325da7810   3 days ago       205MB
+hw3-docker                    latest    67dd050b1e8b   8 days ago       197MB
+hello-world                   latest    f1f77a0f96b7   3 weeks ago      5.2kB
 ```
