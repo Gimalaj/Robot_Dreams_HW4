@@ -1,0 +1,5 @@
+FROM alpine:latest
+
+RUN apk add --no-cache htop pwgen nginx
+COPY index.html /var/www/html/
+CMD ["nginx", "-g", "daemon off;"]
